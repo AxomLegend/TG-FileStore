@@ -1,29 +1,29 @@
 services:
   - type: web
     plan: free
-    name: PYRO-RENAME-BOT
+    name: BDNetwork
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
-    repo: https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT.git      
+    repo: https://github.com/AxomLegend/TG-FileStore.git      
     branch: main
     envVars:
-      - key: BOT_TOKEN 
-        sync: false
       - key: API_ID 
         sync: false
-      - key: API_HASH
+      - key: API_HASH 
         sync: false
-      - key: WEBHOOK
+      - key: BOT_TOKEN
+        sync: false
+      - key: BOT_USERNAME
         synv: false 
-      - key: FORCE_SUB 
+      - key: DB_CHANNEL 
         sync: false
-      - key: DB_NAME 
+      - key: BOT_OWNER
         sync: false
-      - key: DB_URL 
+      - key: DATABASE_URL 
         sync: false 
-      - key: START_PIC 
+      - key: UPDATES_CHANNEL 
         sync: false
-      - key: ADMIN 
+      - key: LOG_CHANNEL 
         sync: false    
     autoDeploy: false 
